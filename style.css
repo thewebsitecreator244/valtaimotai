@@ -7,7 +7,9 @@
 }
 
 body {
-    font-family: 'Fira Sans', sans-serif;
+    max-width: 1920px;
+    min-width: 360px;
+    font-family: "Atkinson Hyperlegible Next", serif;
     font-size: 14px;
     color: white;
     background-color: black;
@@ -131,6 +133,63 @@ body {
     list-style-type: none;
     display: flex;
     gap: 50px;
+}
+@media (max-width: 1245px){
+    .header__title {
+        font-size: 100px;
+    }
+    
+}
+@media (max-width: 768px){
+    .header{
+        height: 100vh;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__menu{
+        display: block;
+    }
+
+    .header__overlay{
+        padding: 150px;
+        
+    }
+    .header__title {
+        font-size: 60px;
+    }
+    .header__subtitle {
+        font-size: 18px;
+    }
+    .footer{
+        height: 100vh;
+    }
+    body{
+        gap: 60px;
+        margin-bottom: 60;
+
+    }
+}
+@media (max-width: 550px) {
+    
+.footer {
+    height: auto;
+}
+
+.footer__nav{
+    gap: 35px;
+    flex-direction: column;
+}
+    
+}
+@media (max-width: 500px){
+    .header__title {
+        font-size: 48px;
+    }
+    .header__overlay{
+        padding: 40px;
+        
+    }
 }
 
 /* Напиши код ниже */
